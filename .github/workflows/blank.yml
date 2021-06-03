@@ -44,5 +44,5 @@ jobs:
           
           git clone https://github.com/qoda/python-wkhtmltopdf.git
           cd python-wkhtmltopdf
-          python setup.py install
+          python setup.py install --install-dir ./
           
