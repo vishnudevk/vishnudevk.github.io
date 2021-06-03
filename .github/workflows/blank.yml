@@ -43,7 +43,7 @@ jobs:
       - uses: dev-drprasad/delete-tag-and-release@v0.2.0
         with:
           delete_release: true # default: false
-          tag_name: refs/tags/${{ github.ref }} # tag name to delete
+          tag_name: tags/${{ github.ref }} # tag name to delete
           #repo: <owner>/<repoName> # target repo (optional). defaults to repo running this action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}     
