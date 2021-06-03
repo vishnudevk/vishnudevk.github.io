@@ -42,7 +42,7 @@ jobs:
           sudo apt-get install wkhtmltopdf
           sudo apt-get install flashplugin-nonfree
           
-          wkhtmltopdf https://google.com ./google.pdf
+          wkhtmltopdf https://vishnudevkuruvanthodi.com/ ./Resume_Vishnudev_Kuruvanthodi.pdf
           
       - name: Release
         uses: softprops/action-gh-release@v1
@@ -50,13 +50,9 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          body: |
-            Changes in this Release
-            - First Change
-            - Second Change
           draft: false
           prerelease: false
-          files: google.pdf
+          files: Resume_Vishnudev_Kuruvanthodi.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
