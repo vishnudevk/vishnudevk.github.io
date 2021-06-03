@@ -36,6 +36,9 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          python --version,
+          python --version
           sudo apt-get install xvfb
+          git clone git@github.com:qoda/python-wkhtmltopdf.git
+          cd python-wkhtmltopdf
+          python setup.py install
           
