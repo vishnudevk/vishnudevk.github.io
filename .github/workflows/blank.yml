@@ -38,7 +38,11 @@ jobs:
           echo Add other actions to build,
           python --version
           sudo apt-get install xvfb
-          git clone git@github.com:qoda/python-wkhtmltopdf.git
+          sudo apt-get install xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
+          sudo apt-get install wkhtmltopdf
+          sudo apt-get install flashplugin-nonfree
+          
+          git clone https://github.com/qoda/python-wkhtmltopdf.git
           cd python-wkhtmltopdf
           python setup.py install
           
