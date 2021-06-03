@@ -44,7 +44,7 @@ jobs:
         #if: startsWith(github.ref, 'refs/tags/')
         with:
           tag_name: tag/${{ github.ref }}
-          #release_name: Release ${{ github.ref }}
+          release_name: Release github.workflow
           draft: false
           prerelease: false
           files: Resume_Vishnudev_Kuruvanthodi.pdf
