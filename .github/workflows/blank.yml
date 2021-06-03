@@ -36,6 +36,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt-get install xvfb xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic wkhtmltopdf flashplugin-nonfree
+          ls
           wkhtmltopdf https://vishnudevkuruvanthodi.com/ ./Resume_Vishnudev_Kuruvanthodi.pdf
           
       - name: Release
