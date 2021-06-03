@@ -42,7 +42,5 @@ jobs:
           sudo apt-get install wkhtmltopdf
           sudo apt-get install flashplugin-nonfree
           
-          git clone https://github.com/qoda/python-wkhtmltopdf.git
-          cd python-wkhtmltopdf
-          python setup.py install --install-dir ./
+          wkhtmltopdf https://google.com ./google.pdf
           
