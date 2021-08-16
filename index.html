@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
@@ -13,7 +14,7 @@
         * { margin: 0; padding: 0; }
         body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
         .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #page-wrap { max-width : 800px; margin: 40px auto 60px; }
         #pic { float: right; margin: -30px 20px 20px 20px; width : 10em; 
             
             filter: drop-shadow(6px 6px 15px #484848);
@@ -29,10 +30,19 @@
             animation: rotateonload 4s infinite;
         }
 
+        @media screen and (min-width: 800px)  {
+            .mobile-break { display: none; }
+
+            h2 span {
+                float:right
+            }
+
+        }
+
         h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
         h2 { font-size: 18px; position: relative; font-weight: 300; color:#333}
         h2 strong {font-size: 19px; padding: 0 5px 0 0; font-weight: 600;}
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        h2 span { bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal }
 
         h3 { font-size: 16px; position: relative; font-weight: 300; color:#333}
         h3 strong {font-size: 16px; padding: 0 5px 0 0; font-weight: 600;}
@@ -42,11 +52,12 @@
         a h2{ color: #222; text-decoration: none; border-bottom: none; }
         a:hover { border-bottom-style: solid; color: black; }
         ul { margin: 0 0 0 17px; }
-        #objective { width: 700px; float: left; }
+        #objective { max-width: 700px; float: left; margin-left: 10px}
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
         .description { font-family: Georgia, Serif; font-style: italic; color: #444; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; width: 75px; float: left; }
-        dd { width: 650px; float: right; border-left: 1px solid #999; padding: 0 0 0 26px; }
+        #contact-info {margin-left: 10px}
+        dt { font-style: italic; font-weight: bold; font-size: 15px;}
+        dd { width: 90%; float: right; border-left: 1px solid #999; padding: 0 0 0 26px; }
         dd.clear { float: none; margin: 0; height: 15px; border-left: none; }
         .smartmargin { margin: 10px 0 0 0; }
 
@@ -84,22 +95,22 @@
             <!-- Microformats! -->
             <h1 class="fn">Vishnudev Kuruvanthodi</h1>
             <h2 class="fn">Data Scientist & Senior Software Developer</h2><br/>
-            <a class="noprint" href="https://github.com/vishnudevk/vishnudevk.github.io/releases/download/tags%2Frefs%2Fheads%2Fmain/Resume_Vishnudev_Kuruvanthodi.pdf" target="_blank"><span class="fas fa-print"></span> Download Resume | </a> <br class="noprint"/>
+            <a class="noprint" href="https://github.com/vishnudevk/vishnudevk.github.io/releases/download/tags%2Frefs%2Fheads%2Fmain/Resume_Vishnudev_Kuruvanthodi.pdf" target="_blank">
+                <span class="fas fa-print"></span>&nbsp; Download Resume | </a> <br class="noprint"/>
             <br/>
             <p>
-                        <a href="tel:+447459407725"><span class="fas fa-phone-alt"> </span><span class="tel"> 0745-940-7725</span></a> | 
-                        <a href="https://goo.gl/maps/fZB5nP5M3KrVaswa8" target="_blank"><span class="fas fa-map-marker-alt"> </span><span class="tel"> Luton, London, UK</span></a>
+                        <a href="tel:+447459407725"><span class="fas fa-phone-alt fa-lg"> </span><span class="tel"></span> 0745-940-7725</span></a> | 
+                        <a href="https://goo.gl/maps/fZB5nP5M3KrVaswa8" target="_blank"><span class="fas fa-map-marker-alt fa-lg"> </span> <span class="tel"></span>Luton, London, UK</span></a> |
                         
-                        <br />
-                        <a class="email" href="mailto:info@vishnudevkuruvanthodi.com" target="_blank"><span class="fas fa-at"></span> info@vishnudevkuruvanthodi.com</a> |
-                        <a class="email" href="mailto:vishnudev.kpm@gmail.com" target="_blank"> <span class="fas fa-at"></span> vishnudev.kpm@gmail.com</a> <br/>
-                        <a href="https://github.com/vishnudevk" target="_blank"><span class="fab fa-github"></span> github.com/vishnudevk</a> |
-                        <a href="https://www.linkedin.com/in/vishnudevk/" target="_blank"><span class="fab fa-linkedin"></span> linkedin.com/in/vishnudevk</a> | <br/>
-                        <!-- <a href="https://www.vishnudevkuruvanthodi.com/"><span class="fas fa-file"></span> vishnudevkuruvanthodi.com</a> | -->
-
-                        
-
+                        <br/>
+                        <a class="email" href="mailto:info@vishnudevkuruvanthodi.com" target="_blank"><span class="fas fa-at"></span>&nbsp; info@vishnudevkuruvanthodi.com</a> |
+                        <br class="mobile-break noprint"/>
+                        <a class="email" href="mailto:vishnudev.kpm@gmail.com" target="_blank"> <span class="fas fa-at"></span>&nbsp; vishnudev.kpm@gmail.com</a> | <br/> 
+                        <a href="https://github.com/vishnudevk" target="_blank"><span class="fab fa-github"></span>&nbsp; github.com/vishnudevk</a> | <br class="mobile-break noprint"/>
+                        <a href="https://www.linkedin.com/in/vishnudevk/" target="_blank"><span class="fab fa-linkedin"></span>&nbsp; linkedin.com/in/vishnudevk</a> |  <br class="mobile-break noprint"/>
+                        <!-- <a href="https://www.vishnudevkuruvanthodi.com/"><span class="fas fa-file"></span> vishnudevkuruvanthodi.com</a> |  -->
             </p>
+            <br class="noprint"/>
         </div>
 
         <div id="objective">
@@ -117,11 +128,11 @@
             <dd class="clear"></dd>
             <dt>Education</dt>
             <dd>
-                <h2><strong>University Of Hertfordshire</strong> UK <span>September 2020&ndash;September 2022</span></h2>
+                <h2><strong>University Of Hertfordshire</strong> UK <br class="mobile-break noprint"/> <span>September 2020&ndash;September 2022</span></h2>
                 <p><strong>Major:</strong> MSc. Data Science and Analytics<br/>
             </dd>
             <dd>
-                <h2 class="smartmargin"><strong>Cochin University Of Science and Technology </strong> India<span>2007&ndash;2011</span> </h2>
+                <h2 class="smartmargin"><strong>Cochin University Of Science and Technology </strong> India <span>2007&ndash;2011</span> </h2>
                 <p><strong>BTech.</strong> Electronics and Communication Engineering<br />
             </dd>
 
