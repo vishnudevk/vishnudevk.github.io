@@ -45,7 +45,7 @@ jobs:
           #${GITHUB_WORKSPACE}/.github/html2pdf.sh "index.html" "./Resume_Vishnudev_Kuruvanthodi.pdf"
           wkhtmltopdf index.html ./Resume_Vishnudev_Kuruvanthodi.pdf
           
-          exiftool -Author="Vishnudev Kuruvanthodi <info@vishnudevkuruvanthodi.com>" -Title="Vishnudev Kuruvanthodi - Resume" -Subject="2Highly organized, progressive and proactive data scientist with 9+ years of experience in software development of data-intensive applications, overcoming complex architectural and scalability issues in diverse industries. Proficient in predictive modelling, data processing, data mining algorithms as well as scripting languages including Python, Javascript and Java." Resume_Vishnudev_Kuruvanthodi.pdf
+          exiftool -Author="Vishnudev Kuruvanthodi <info@vishnudevkuruvanthodi.com>" -Title="Vishnudev Kuruvanthodi - Resume" -Subject="Highly organized, progressive and proactive data scientist with 9+ years of experience in software development of data-intensive applications, overcoming complex architectural and scalability issues in diverse industries. Proficient in predictive modelling, data processing, data mining algorithms as well as scripting languages including Python, Javascript and Java." Resume_Vishnudev_Kuruvanthodi.pdf
           exiftool -XMP:Keywords="Resume" -XMP:Subject="AI, ML, Machine Learning, Data Science, Data Scientist, Java, Tensorflow, Python, AWS, Cloud, Data Engineer, Data Analyst, Data Architect, Machine Learning Scientist" -sep ", " Resume_Vishnudev_Kuruvanthodi.pdf
       
           
