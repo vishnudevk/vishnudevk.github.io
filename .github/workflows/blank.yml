@@ -42,7 +42,7 @@ jobs:
           
           chmod +x "${GITHUB_WORKSPACE}/.github/html2pdf.sh"
           
-          ${GITHUB_WORKSPACE}/.github/html2pdf.sh index.html ./Resume_Vishnudev_Kuruvanthodi.pdf
+          ${GITHUB_WORKSPACE}/.github/html2pdf.sh index.html Resume_Vishnudev_Kuruvanthodi.pdf
           #wkhtmltopdf index.html ./Resume_Vishnudev_Kuruvanthodi.pdf
           
           
