@@ -40,10 +40,13 @@ jobs:
         
           sudo apt-get install xvfb xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic wkhtmltopdf flashplugin-nonfree exiftool
           
-          chmod +x "${GITHUB_WORKSPACE}/.github/html2pdf.sh"
+          #chmod +x "${GITHUB_WORKSPACE}/.github/html2pdf.sh"
           
-          ${GITHUB_WORKSPACE}/.github/html2pdf.sh "index.html" "./Resume_Vishnudev_Kuruvanthodi.pdf"
-          #wkhtmltopdf index.html ./Resume_Vishnudev_Kuruvanthodi.pdf
+          #${GITHUB_WORKSPACE}/.github/html2pdf.sh "index.html" "./Resume_Vishnudev_Kuruvanthodi.pdf"
+          wkhtmltopdf index.html ./Resume_Vishnudev_Kuruvanthodi.pdf
+          
+          exiftool -Author="Vishnudev Kuruvanthodi <info@vishnudevkuruvanthodi.com>" -Title="Vishnudev Kuruvanthodi - Resume" -Subject="2Highly organized, progressive and proactive data scientist with 9+ years of experience in software development of data-intensive applications, overcoming complex architectural and scalability issues in diverse industries. Proficient in predictive modelling, data processing, data mining algorithms as well as scripting languages including Python, Javascript and Java." Resume_Vishnudev_Kuruvanthodi.pdf
+          exiftool -XMP:Keywords="one, two, three" -XMP:Subject="four, five, six" -sep ", " Resume_Vishnudev_Kuruvanthodi.pdf
           
           
       - uses: dev-drprasad/delete-tag-and-release@v0.2.0
