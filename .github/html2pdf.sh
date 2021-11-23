@@ -36,11 +36,6 @@ if [[ "$#" > 1 ]]; then
         -Producer="$(exiftool -q -z -P -p '$PDF:Creator / $PDF:Producer' "${tmp}")" \
         -CreateDate="$([ -f "${2}" ] && exiftool -q -z -P -s3 -PDF:CreateDate "${2}" || exiftool -q -z -P -s3 -PDF:CreateDate "${tmp}")" '-ModifyDate<PDF:CreateDate' '-XMP:MetadataDate<PDF:CreateDate' \
         -overwrite_original_in_place "${tmp}" \
-    && qpdf \
-        --suppress-recovery \
-        --linearize --stream-data=compress \
-        --encrypt "" "$(md5 -q -s "${RANDOM}$(( x=RANDOM, y=RANDOM, x>=y?x-y:y-x ))$(( $(date +%s) % RANDOM ))$(( x=RANDOM, y=RANDOM, x>=y?x-y:y-x ))${RANDOM}")" 128 \
-        --accessibility=y --extract=y --print=full --modify=none -- \
         "${tmp}" "${tmp2}"
     if [[ $? -lt 1 ]]; then
         cp -f "${tmp2}" "${2}"
