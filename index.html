@@ -14,7 +14,7 @@
         * { margin: 0; padding: 0; }
         body { font: 1.2em Open Sans,Helvetica,Arial,sans-serif; line-height: 24px; background: url(images/noise.jpg); }
         .clear { clear: both; }
-        #page-wrap { max-width : 800px; margin: 40px auto 60px; }
+        #page-wrap { max-width : 800px; margin: 40px auto 60px; padding-left: 2em; padding-right: 2em;}
         #pic { float: right; margin: -30px 20px 20px 20px; width : 10em; 
             
             filter: drop-shadow(6px 6px 15px #484848);
@@ -39,10 +39,17 @@
 
         }
 
+        @media only screen and (max-width: 800px) {
+            dd img {
+                height: 10em !important;
+            }
+        
+        }
+
         .badge{
             height: 4em;
             float: left;
-            margin-left: -1.5em;
+            margin-left: -1em;
             margin-right: 0.5em;
         }
 
