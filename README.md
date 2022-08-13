@@ -1,5 +1,6 @@
 # Resume
 
+wkhtmltopdf --enable-local-file-access index.html ~/Downloads/Resume_Vishnudev_Kuruvanthodi.pdf
 
 This one-webpage, printable resume was originally found at  [GitHub](https://github.com/gonsie/Cthulu-Resume) / [css-tricks.com](https://css-tricks.com/one-page-resume-site/).
 It created by [@chriscoyier](http://github.com/chriscoyier) with illustrations by [Michael Dashow](http://www.michaeldashow.com/zoom/zoom_wageslave.html).
