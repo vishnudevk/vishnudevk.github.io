@@ -38,15 +38,15 @@ jobs:
           
           sudo apt update && sudo apt upgrade
         
-          sudo apt-get install xvfb xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic wkhtmltopdf flashplugin-nonfree exiftool
-          
+          sudo apt-get install xvfb xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic wkhtmltopdf exiftool
+          #flashplugin-nonfree 
           #chmod +x "${GITHUB_WORKSPACE}/.github/html2pdf.sh"
           
           #${GITHUB_WORKSPACE}/.github/html2pdf.sh "index.html" "./Resume_Vishnudev_Kuruvanthodi.pdf"
           wkhtmltopdf index.html ./Resume_Vishnudev_Kuruvanthodi.pdf
           
-          exiftool -Author="Vishnudev Kuruvanthodi <info@vishnudevkuruvanthodi.com>" -Title="Vishnudev Kuruvanthodi - Resume" -Subject="Highly organized, progressive and proactive data scientist with 9+ years of experience in software development of data-intensive applications, overcoming complex architectural and scalability issues in diverse industries. Proficient in predictive modelling, data processing, data mining algorithms as well as scripting languages including Python, Javascript and Java." Resume_Vishnudev_Kuruvanthodi.pdf
-          exiftool -XMP:Keywords="Resume" -XMP:Subject="AI, ML, Machine Learning, Data Science, Data Scientist, Java, Tensorflow, Python, AWS, Cloud, Data Engineer, Data Analyst, Data Architect, Machine Learning Scientist" -sep ", " Resume_Vishnudev_Kuruvanthodi.pdf
+          exiftool -Author="Vishnudev Kuruvanthodi <info@vishnudevkuruvanthodi.com>" -Title="Vishnudev Kuruvanthodi - Resume" -Subject="Seasoned software engineer with 6+ years of experience in Java development, now focused on driving AI‑powered research as a Research Software Engineer for the past 2-3 years. My work blends deep‑learning expertise with production‑grade engineering: I design and maintain CI-CD/ML‑Ops pipelines on OpenShift, orchestrate large‑scale training and fine‑tuning of LLMs and embedding models, and build agentic systems that interact with those models to accelerate scientific discovery. Leveraging a solid foundation in distributed systems, I translate complex research requirements into reliable, scalable solutions that empower scientists and domain experts to extract insights faster and more effectively. " Resume_Vishnudev_Kuruvanthodi.pdf
+          exiftool -XMP:Keywords="Resume" -XMP:Subject="AI, ML, Machine Learning, Data Science, Data Scientist, Java, PyTorch, Openshift, Kubernetes, LLM ,Tensorflow, Python, AWS, Cloud, Data Engineer, Data Analyst, Data Architect, Machine Learning Scientist" -sep ", " Resume_Vishnudev_Kuruvanthodi.pdf
       
           
       - uses: dev-drprasad/delete-tag-and-release@v1.1
