@@ -49,7 +49,7 @@ jobs:
           exiftool -XMP:Keywords="Resume" -XMP:Subject="AI, ML, Machine Learning, Data Science, Data Scientist, Java, Tensorflow, Python, AWS, Cloud, Data Engineer, Data Analyst, Data Architect, Machine Learning Scientist" -sep ", " Resume_Vishnudev_Kuruvanthodi.pdf
       
           
-      - uses: dev-drprasad/delete-tag-and-release@v0.2.0
+      - uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
           delete_release: true # default: false
           tag_name: tags/${{ github.ref }} # tag name to delete
