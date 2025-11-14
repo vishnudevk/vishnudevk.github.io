@@ -45,6 +45,7 @@ jobs:
           echo "PWD=$(pwd)"
           
           ls -ltra
+          pwd
           
           #${GITHUB_WORKSPACE}/.github/html2pdf.sh "index.html" "./Resume_Vishnudev_Kuruvanthodi.pdf"
           wkhtmltopdf index.html ./Resume_Vishnudev_Kuruvanthodi.pdf
