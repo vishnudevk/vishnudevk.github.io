@@ -41,6 +41,10 @@ jobs:
           sudo apt-get install xvfb xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic wkhtmltopdf exiftool
           #flashplugin-nonfree 
           #chmod +x "${GITHUB_WORKSPACE}/.github/html2pdf.sh"
+
+          echo "PWD=$(pwd)"
+          
+          ls -ltra
           
           #${GITHUB_WORKSPACE}/.github/html2pdf.sh "index.html" "./Resume_Vishnudev_Kuruvanthodi.pdf"
           wkhtmltopdf index.html ./Resume_Vishnudev_Kuruvanthodi.pdf
